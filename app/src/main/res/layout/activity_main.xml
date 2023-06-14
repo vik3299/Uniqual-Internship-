@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <!-- Hi, Welcome Back! -->
+    <TextView
+        android:id="@+id/hi_welcome_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="@dimen/_69ssp"
+        android:text="Hi,Welcome Back!"
+        android:paddingLeft="@dimen/_20ssp"
+        android:fontFamily="@font/pop"
+
+
+        android:textSize="@dimen/_24ssp"
+
+        />
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C9C9C9"
+        app:layout_constraintTop_toBottomOf="@+id/hi_welcome_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Hello again, You’ve been missed!"
+        android:paddingLeft="@dimen/_20ssp"
+        android:fontFamily="@font/pop"
+
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Email"
+        android:paddingLeft="@dimen/_22ssp"
+        android:fontFamily="@font/pop"
+        android:paddingTop="@dimen/_30ssp"
+
+        android:textSize="@dimen/_14ssp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/email_txt"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+      android:background="@drawable/edit"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Password"
+        android:paddingLeft="@dimen/_22ssp"
+        android:fontFamily="@font/pop"
+        android:paddingTop="@dimen/_30ssp"
+        android:textSize="@dimen/_14ssp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt"
+        android:hint="Password"
+        android:background="@drawable/edit"
+        android:textColor="@color/black"
+        android:inputType="numberPassword"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_21sdp"
+        android:paddingVertical="@dimen/_10sdp"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="@dimen/_16sdp"
+        android:text="Login"
+        android:background="@drawable/login"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/_10sdp"
+        android:fontFamily="@font/pop"
+
+        android:layout_marginVertical="@dimen/_25sdp"
+
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
