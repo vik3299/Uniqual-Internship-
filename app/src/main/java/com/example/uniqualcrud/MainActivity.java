@@ -28,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
         String savedEmail = sharedPreferences.getString("email", "");
         String savedPassword = sharedPreferences.getString("password", "");
 
-
-
-
     }
 
 }
