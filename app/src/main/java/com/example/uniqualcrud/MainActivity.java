@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         String savedEmail = sharedPreferences.getString("email", "");
         String savedPassword = sharedPreferences.getString("password", "");
 
-        Toast.makeText(this, "" + savedPassword + savedEmail, Toast.LENGTH_SHORT).show();
+
+
+
     }
+
 }
